@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento 11</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- cabecera -->
+    <header>
+
+        <img id="logoAmpudia" src="imagenes/logoAmpudia.png" alt="">
+        <img id="logoSena" src="imagenes/logoSena.png" alt="">
+
+        <h1>Trivia</h1>
+
+        <p> <b> Responde a las siguientes preguntas </b></p> <br>
+        <div></div>
+
+
+        <!-- <nav class="nav">
+            <ul>
+                <li><a href="index.html"> Inicio</a></li>
+                <li><a href="extra.html"> Video</a></li>
+            </ul>
+
+        </nav> -->
+
+    </header>
+
+    <!-- Contenido -->
+
+    <div class="contenedor">
+
+
+        <section>
+            <form name="trivia" onsubmit="return validarRespuestas()">
+
+
+                <h3>1. ¿Que profesor al inicio de sus clases dice saludos queridas y queridos?</h3>
+                <input type="radio" , name="p1" value="a" id="P1" required><label for="P1">A. Uwerney Cocuñame</label> <br>
+                <input type="radio" , name="p1" value="b" id="P1.2" required><label for="P1.2">B. Jairo Solarte</label><br>
+                <input type="radio" , name="p1" value="c" id="P1.3" required><label for="P1.3">C. Luis Hernandez</label> <br>
+                <input type="radio" , name="p1" value="d" id="P1.4" required><label for="P1.4">D. Rosa Melida</label> <br>
+
+
+                <h3>2. “Ay que maravilla!!” ¿Quien utiliza esta frase?</h3>
+                <input type="radio" , name="p2" value="a" id="P2"><label for="P2">A. Viviana Ordóñez</label> <br>
+                <input type="radio" , name="p2" value="b" id="P2.2"><label for="P2.2">B. Rosa Melida</label> <br>
+                <input type="radio" , name="p2" value="c" id="P2.3"><label for="P2.3">C. Jhon Jairo Ramírez</label> <br>
+                <input type="radio" , name="p2" value="d" id="P2.4"><label for="P2.4">D. Sabarain Vázquez</label> <br>
+
+                <h3>3. ¿Que profesor silencia a sus estudiantes azotando un palo en la mesa?</h3>
+                <input type="radio" , name="p3" value="a" id="P3"><label for="P3">A. Sabarain Vázquez</label><br>
+                <input type="radio" , name="p3" value="b" id="P3.2"><label for="P3.2">B. Jhon Jairo Ramírez</label><br>
+                <input type="radio" , name="p3" value="c" id="P3.3"><label for="P3.3">C. Jairo Solarte</label><br>
+                <input type="radio" , name="p3" value="d" id="P3.4"><label for="P3.4">D. Néstor Fabián Ospina</label><br>
+
+                <h3>4. ¿Quien no puede decir la palabra ferrocarril?</h3>
+                <input type="radio" , name="p4" value="a" id="P4"><label for="P4">A. Óscar Tascón</label><br>
+                <input type="radio" , name="p4" value="b" id="P4.2"><label for="P4.2">B. Sabarain Vázques</label><br>
+                <input type="radio" , name="p4" value="c" id="P4.3"><label for="P4.3">C. Jhon Jairo Valencia</label><br>
+                <input type="radio" , name="p4" value="d" id="P4.4"><label for="P4.4">D. Arturo Muriel </label><br>
+
+                <h3>5. ¿Quién se pone a contar historias a mitad de la clase?</h3>
+                <input type="radio" , name="p5" value="a" id="P5"><label for="P5">A. Néstor Fabián Ospina</label><br>
+                <input type="radio" , name="p5" value="b" id="P5.2"><label for="P5.2">B. Jhon Jairo Solarte</label><br>
+                <input type="radio" , name="p5" value="c" id="P5.3"><label for="P5.3">C. Rosa Melida Córdoba</label><br>
+                <input type="radio" , name="p5" value="d" id="P5.4"><label for="P5.4">D. Arturo Muriel</label><br>
+
+                <h3>6. ¿Quién cobra 500 pesos si llegas tarde a su clase?</h3>
+                <input type="radio" , name="p6" value="a" id="P6"><label for="P6">A. Arturo Muriel</label><br>
+                <input type="radio" , name="p6" value="b" id="P6.2"><label for="P6.2">B. Luis Hernandez</label><br>
+                <input type="radio" , name="p6" value="c" id="P6.3"><label for="P6.3">C. Néstor Fabián Ospina </label><br>
+                <input type="radio" , name="p6" value="d" id="P6.4"><label for="P6.4">D. Jhon Jairo Ramírez</label><br>
+
+                <h3>7. “Eso lo hace hasta un bebé” es una frase dicha por?</h3>
+                <input type="radio" , name="p7" value="a" id="P7"><label for="P7">A. Jhon Jairo Valencia</label><br>
+                <input type="radio" , name="p7" value="b" id="P7.2"><label for="P7.2">B. Jairo Solarte </label><br>
+                <input type="radio" , name="p7" value="c" id="P7.3"><label for="P7.3">C. Luis Hernandez</label><br>
+                <input type="radio" , name="p7" value="d" id="P7.4"><label for="P7.4">D. Uwerney Cocuñame </label><br>
+
+                <h3>8. ¿Quién es la profe más alta de la institución?</h3>
+                <input type="radio" , name="p8" value="a" id="P8"><label for="P8">A. María Pacheco</label><br>
+                <input type="radio" , name="p8" value="b" id="P8.2"><label for="P8.2">B. Viviana Ordóñez</label><br>
+                <input type="radio" , name="p8" value="c" id="P8.3"><label for="P8.3">C. Rosa Melida Córdoba</label><br>
+                <input type="radio" , name="p8" value="d" id="P8.4"><label for="P8.4">D. Liliana Martínez</label><br>
+
+
+
+
+                <input type="submit" value="Enviar">
+
+
+            </form>
+        </section>
+    </div>
+
+
+    <!-- <svg width="900" height="20">
+            <rect width="350" height="10" fill="black">
+            <animate attributeName="10" from="-50" to="250"
+            dur="7s" fill="freez" repeatCount="100000"/> 
+            </rect>
+        </svg> -->
+
+    <!-- footer -->
+    <!-- <div id="footer">
+        <div class="containerFooter">
+            <div>
+                EJEMPLOSSSSSSS, cosas que colocar en footer
+            </div>
+        </div>
+
+    </div> -->
+
+    <div id="pieFooter">© Juan de Ampudia 2020 - Despedida 11</div>
+
+    <!-- Mensaje de Resultado -->
+    <div id="modal">
+
+        <div id="contenidoModal">
+
+            <div id="cerrar">
+                <a href="javascript:cerrar()"> <img src="imagenes/cerrar 1.png" style="transform: scale(0.6);" alt=""> </a>
+            </div>
+
+            <div id="resultado"></div>
+
+            <img id="resultadoImg" src="imagenes/Resultado.svg" alt="">
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

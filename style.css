@@ -1,0 +1,326 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Asap', sans-serif;
+    background-color: rgb(143, 190, 251);
+}
+
+
+/* .fixed {
+    transform: scale(1.2);
+    position: fixed;
+    z-index: -1;
+} */
+
+header {
+    background-color: #0282e4;
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    color: yellow;
+    font-size: 60px;
+}
+
+header div {
+    background-color: #00528F;
+    height: 20px;
+}
+
+form h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.nav {
+    background-color: #00528F;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0px 50px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+    border-color: #464095;
+    padding: 5px 20px;
+    transition: 0.3s;
+}
+
+.nav li a:hover {
+    background-color: #2373b1ce;
+}
+
+#modal {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#contenidoModal {
+    background-color: rgba(86, 70, 177, 0.986);
+    margin: auto;
+    width: 60%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+#resultadoImg {
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+}
+
+#cerrar {
+    margin: 0px;
+    width: 10%;
+    margin-left: 90%;
+}
+
+.contenedor {
+    background-color: #0260a8;
+    width: 60%;
+    padding: 25px;
+    overflow: auto;
+    margin: 20px auto;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+
+form h3 {
+    color: rgb(236, 236, 236);
+}
+
+#logoAmpudia {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 290px;
+}
+
+#logoSena {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 290px;
+}
+
+section {
+    align-items: center;
+    min-height: 420px;
+}
+
+input[type="radio"] {
+    margin: 5px;
+    width: 15px;
+    height: 15px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    background-color: #0c84e0;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(248, 248, 248);
+    cursor: pointer;
+    max-width: 75%;
+    font-size: 18px;
+}
+
+label:hover {
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 25px;
+    border: 0;
+    background-color: #f1f1f1;
+    color: #000;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.02, 1.02);
+    background-color: rgb(255, 255, 255);
+}
+
+#resultado {
+    font-size: 25px;
+}
+
+#resultado h3 {
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0
+}
+
+#resultado span {
+    color: white;
+    font-weight: bold;
+}
+
+#footer {
+    color: white;
+    height: 90px;
+    background-color: #39347D;
+}
+
+#pieFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 40px;
+    top: 50px;
+    background-color: #272555;
+}
+
+@media screen and (max-width: 997px) {
+    header p {
+        font-size: 20px;
+    }
+    #logoAmpudia {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        left: 150px;
+    }
+    #logoSena {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        right: 150px;
+    }
+    .nav li {
+        display: inline-block;
+        margin: 0px 35px;
+    }
+    #resultadoImg {
+        margin-top: 5px;
+        width: 100%;
+        height: 250px;
+    }
+    #resultado {
+        font-size: 30px;
+    }
+    #cerrar {
+        margin: 0px;
+        width: 5%;
+        margin-left: 88%;
+    }
+}
+
+@media screen and (max-width: 854px) {
+    #logoAmpudia {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        left: 80px;
+    }
+    #logoSena {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        right: 80px;
+    }
+}
+
+@media screen and (max-width: 623px) {
+    .nav li {
+        display: inline-block;
+        margin: 0px 25px;
+    }
+    #logoAmpudia {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        left: 30px;
+    }
+    #logoSena {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        right: 30px;
+    }
+    #cerrar {
+        margin: 0px;
+        width: 5%;
+        margin-left: 83%;
+    }
+}
+
+@media (max-width: 359px) {
+    header p {
+        font-size: 15px;
+    }
+    #logoAmpudia {
+        position: absolute;
+        width: 65px;
+        height: 65px;
+        left: 290px;
+    }
+    #logoSena {
+        position: absolute;
+        width: 65px;
+        height: 65px;
+        right: 290px;
+    }
+    .nav li {
+        display: inline-block;
+        margin: 0px 25px;
+    }
+    .contenedor {
+        width: 70%;
+    }
+    #resultadoImg {
+        margin-top: 5px;
+        width: 100%;
+        height: 150px;
+    }
+    #contenidoModal {
+        background-color: rgba(86, 70, 177, 0.986);
+        margin: auto;
+        width: 60%;
+        height: 60%;
+        border-radius: 20px;
+    }
+    #resultado {
+        font-size: 20px;
+    }
+    #cerrar {
+        margin: 0px;
+        width: 5%;
+        margin-left: 70%;
+    }
+}
